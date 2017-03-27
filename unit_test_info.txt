@@ -2,5 +2,5 @@
 # Info for running unit tests when IDE has current directory as startup dir.
 #
 
-ModuleName=model_openfoam
+ModuleName=model-openfoam
 UnitTestsRootDir=.

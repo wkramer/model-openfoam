@@ -1,0 +1,29 @@
+group = 'org.openda'
+version = '3.0'
+
+apply plugin: "pride"
+apply plugin: 'java'
+apply plugin: 'maven'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.prezi.pride:gradle-pride-plugin:0.11"
+    }
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url 'http://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/'
+    }
+    mavenCentral()
+}
+
+dependencies{
+    compile group: "org.openda", name: "core", version: "3.0"
+    compile group: "org.openda", name: "observers", version: "3.0"
+//    runtime group: "org.openda", name: "application", version: "3.0"
+}
