@@ -15,7 +15,9 @@ buildscript {
 }
 
 repositories {
-    mavenLocal()
+    maven {
+        url "file://${rootDir}/repo/"
+    }
     maven {
         url 'http://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/'
     }
