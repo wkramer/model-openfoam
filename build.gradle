@@ -22,10 +22,12 @@ repositories {
         url 'http://artifacts.unidata.ucar.edu/content/repositories/unidata-releases/'
     }
     mavenCentral()
+    maven {
+        url "file://${rootDir}/repo/"
+    }
 }
 
 dependencies{
     compile group: "org.openda", name: "core", version: "3.0"
     compile group: "org.openda", name: "observers", version: "3.0"
-//    runtime group: "org.openda", name: "application", version: "3.0"
 }
